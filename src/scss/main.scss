@@ -2,10 +2,13 @@
 @use "base/_var" as *;
 @use "base/_base";
 @use"base/_typography";
+@use"base/_buttons";
 @use"blocks/_logo";
 @use"blocks/_header-menu";
 @use"blocks/_gamburger";
 @use "sections/_header";
+@use "sections/_promo";
+@use "pages/_index-page";
 // @use "base/_test";
 // @use"base/_grids";
 // @use"base/_typography";

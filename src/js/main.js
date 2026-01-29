@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function(){
       }
       function openMobileMenu(){
         menuButton.classList.add('active');
-         mobileMenu.style.height =  mobileMenu.scrollHeight + 'px';
+        let menuHeight = mobileMenu.scrollHeight + 20;
+        mobileMenu.style.height =  menuHeight + 'px';
         bodyEl.classList.add('lock');
       }
         menuButton.addEventListener('click', ()=> {

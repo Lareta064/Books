@@ -1,0 +1,22 @@
+@use "base/_var" as *;
+.btn{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	border-radius: remy(50);
+	padding: 0;
+	padding-inline:1.8em;
+	width: fit-content;
+	height: 2em;
+	background: var(--accent);
+	color: white;
+	font-size: remy(32);
+	font-weight: 400;
+	font-family: var(--font-family);
+	@media (max-width: 1023px) {
+	  font-size: remy(20);
+	}
+}

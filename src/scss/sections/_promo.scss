@@ -1,0 +1,31 @@
+@use "base/_var" as *;
+.promo-content{
+	display: flex;
+	column-gap: remy(32);
+}
+.promo-text{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	row-gap:30px;
+	font-family: var(--font-family);
+	font-weight: 400;
+	padding-top: remy(8);
+	
+}
+.promo-suptext{
+	font-size: 20px;
+	color: rgba(255, 255, 255, .7);
+	padding-block:remy(10);
+	padding-left: remy(20);
+	border-left: 1px solid currentColor;
+	margin-bottom: remy(20);
+}
+.promo-subtext{
+	font-size: 32px;
+	color: rgba(255, 255, 255, .9);
+}
+.promo-picture{
+	width: 45%;
+	max-width: 551px;
+}

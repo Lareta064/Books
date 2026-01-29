@@ -26,7 +26,9 @@ section.inner-promo(
 }
 :root {
 	--font-family: "Gilroy", sans-serif;
-    --second-family: "Kinetika", sans-serif;
+   --second-family: "Gilroy", sans-serif;
+   --third-family: "Kinetika", sans-serif;
+	
 	--accent: #f90;
 	--text: #fff;
 	--bodyBg: #0b0b39;
@@ -118,7 +120,8 @@ input::placeholder, textarea::placeholder{
 	font-family: inherit;
 	font-size: inherit;
 }
-
+main{position: relative;
+}
 .container{
 	width: 100%;
 	max-width: 1440px;
