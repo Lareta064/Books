@@ -12,6 +12,15 @@
 	@media (max-width: 1023px) {
 	  column-gap:remy(24);
 	}
+	@media (max-width: 767px) {
+		width: 100%;
+		padding: 16px;
+		 padding-top: 74px;
+		background-color: var(--bodyBg);
+	    flex-direction: column;
+		align-items: flex-start;
+
+	}
 }
 .main-menu a{
 	font-family: var(--font-family);
@@ -19,6 +28,7 @@
 	font-size: remy(24);
 	color: var(--text);
 	transition: .3s;
+	display: inline-block;
 	@media (max-width: 1279px) {
 	  font-size: remy(20);
 	}
@@ -27,10 +37,23 @@
 	}
 	@media (max-width: 767px) {
 	 font-size: remy(24);
+	 padding-block:7px;
 	}
 }
 .header-menu{
 	flex-grow: 1;
 	display: flex;
 	justify-content: flex-end;
+	@media (max-width: 767px) {
+	   position: fixed;
+	   background-color: var(--bodyBg);
+	   top: 0;
+	   right: 0;
+	   left: 0;
+	   height: 0;
+	   overflow: hidden;
+	   z-index: 3;
+	   transition: .3s;
+	  
+	}
 }

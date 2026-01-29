@@ -17,5 +17,7 @@
 	}
 	@media (max-width: 767px) {
 	font-size: remy(24);
+	 position: relative;
+    z-index: 4;
 	}
 }
