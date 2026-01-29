@@ -1,0 +1,36 @@
+@use "base/_var" as *;
+.main-menu{
+	display: flex;
+	align-items: center;
+	column-gap:remy(50);
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	@media (max-width: 1279px) {
+	  column-gap:remy(30);
+	}
+	@media (max-width: 1023px) {
+	  column-gap:remy(24);
+	}
+}
+.main-menu a{
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: remy(24);
+	color: var(--text);
+	transition: .3s;
+	@media (max-width: 1279px) {
+	  font-size: remy(20);
+	}
+	@media (max-width: 1023px) {
+	 font-size: remy(18);
+	}
+	@media (max-width: 767px) {
+	 font-size: remy(24);
+	}
+}
+.header-menu{
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+}

@@ -1,10 +1,11 @@
 //- ===== colors ======
-$baseFs: 16;
+
+
+@use "sass:math";
 
 @function remy($pxsize) {
-  @return ($pxsize / $baseFs) * 1rem;
+  @return math.div($pxsize, 16) * 1rem;
 }
-
 @function size($pxsize) {
 	@return calc(($pxsize/17))*1vw;
 }

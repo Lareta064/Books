@@ -1,0 +1,21 @@
+@use "base/_var" as *;
+
+.custom-logo{
+	font-family: var(--second-family);
+	font-weight: 500;
+	font-size: remy(36);
+	color: var(--text);
+	flex-shrink: 0;
+	@media (max-width: 1279px) {
+	font-size: remy(30);
+	}
+	@media (max-width: 1199px) {
+	  font-size: remy(24);
+	}
+	@media (max-width: 1023px) {
+	  font-size: remy(20);
+	}
+	@media (max-width: 767px) {
+	font-size: remy(24);
+	}
+}

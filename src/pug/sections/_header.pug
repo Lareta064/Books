@@ -1,10 +1,22 @@
-header.header-mobile
+header.header
 	.container
-		//- a.logo(href="index.html")
-		//- 	img(src='./img/logo.png', srcset='./img/logo@2x.webp 2x'  height='44'  alt='logo')
+		.header-content
+			a.custom-logo(href="index.html")
+				span Science Made #[span.txt-accent Easy]
 
-		//menu-toggle
-		button.menu-toggle#menu-toggle
-			span
+			.header-menu
+				ul.main-menu
+					li.menu-item
+						a(href="#reviews") Reviews
+					li.menu-item
+						a(href="#books") Books
+					li.menu-item
+						a(href="#mission") The Mission
+					li.menu-item
+						a(href="#author") Author
+			
+			//menu-toggle
+			button.menu-toggle#menu-toggle
+				span
 	
 

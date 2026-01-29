@@ -1,6 +1,10 @@
 
 @use "base/_var" as *;
 @use "base/_base";
+@use"base/_typography";
+@use"blocks/_logo";
+@use"blocks/_header-menu";
+@use "sections/_header";
 // @use "base/_test";
 // @use"base/_grids";
 // @use"base/_typography";

@@ -29,6 +29,7 @@ section.inner-promo(
     --second-family: "Kinetika", sans-serif;
 	--accent: #f90;
 	--text: #fff;
+	--bodyBg: #0b0b39;
 	
 }
 html {
@@ -39,12 +40,12 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	
-	
+	background-color: var(--bodyBg);
+	font-family: var(--font-family);
 	font-weight: 400;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;
-	font-size: 16px;
+	color: var(--text);
 	
 	
 }
@@ -119,29 +120,17 @@ input::placeholder, textarea::placeholder{
 }
 
 .container{
-	
-	
-}
-/*vendore*/
-.d-flex, .d-flex-cy, .flex-column, .icon-txt{
-	display: flex;
-	gap:8px;
-}
-.flex-column{
-	flex-direction: column;
-}
-.flex-center{
-	justify-content: center;
-	align-items: center;
-}
-.d-flex-cy, .icon-txt{
-	align-items: center;
-}
-.d-flex.xs-flex-column{
-	flex-direction: column;
-	@media (min-width: 744px) {
-	flex-direction: row;
+	width: 100%;
+	max-width: 1440px;
+	padding-inline: 60px;
+	margin: 0 auto;
+	@media (max-width: 1279px) {
+	  padding-inline: 50px;
+	}
+	@media (max-width: 1023px) {
+	  padding-inline: 30px;
+	}
+	@media (max-width: 767px) {
+	  padding-inline: 16px;
 	}
 }
-
-
