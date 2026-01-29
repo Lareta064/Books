@@ -16,7 +16,14 @@
 	font-size: remy(32);
 	font-weight: 400;
 	font-family: var(--font-family);
+	transition: .3s; 
 	@media (max-width: 1023px) {
 	  font-size: remy(20);
 	}
+}
+.btn:hover{
+	background: #d27e01;
+}
+.btn:active{
+	background: #f6a42a;
 }

@@ -3,17 +3,21 @@
 @use "base/_var" as *;
 
 .header{
-	padding-block: remy(50);
+	padding-top: remy(50);
+	padding-bottom: remy(30);	
+	
 	overflow: hidden;
 	position: relative;
 	z-index: 2;
 	
 	
 	@media (max-width: 1364px) {
-	  padding-block: remy(40);
+	  padding-top: remy(40);
+	  padding-bottom: remy(20);	
 	}
 	@media (max-width: 1023px) {
-	 padding-block: remy(30);
+	 padding-top: remy(30);
+	 padding-bottom: remy(10);	
 	}
 }
 .header-content{

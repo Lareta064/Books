@@ -1,6 +1,14 @@
+@use "base/_var" as *;
+
 .txt-accent{color: var(--accent);}
 .h1{
 	font-family: var(--third-family);
 	font-weight: 500;
-	font-size: 64px;
+	font-size: remy(64);
+	@media (max-width: 1439px) {
+	  font-size: 4.4vw;
+	}
+	@media (max-width: 767px) {
+	font-size: remy(32);
+	}
 }

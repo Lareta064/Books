@@ -1,13 +1,26 @@
 //PROMO
-section.promo
-	.container
+mixin promoSlider
+	.swiper-slide
 		.promo-content
 			.promo-text
 				.promo-suptext A 5-Book STEM <br/> Collection
 				h1.h1 Science That Makes<br>More Sense Than Any<br>Textbook
-				.promo-subtext A visual STEM collection that replaces<br>confusing chapters with simple, clear answers	
-				a.btn(href="#!" rel="noreferrer noopener") Buy on Amazon
+				.promo-subtext A visual STEM collection that replaces<br>confusing chapters with simple, clear answers
+				a.btn(href="#!" rel="noreferrer noopener" target="_blank") Buy on Amazon
+			
 			.promo-picture
-				picture
-					source(srcset="./img/promo-mob.webp 1x, ./img/promo-mob@2x.webp 2x" media="(max-width: 767px)"  type="image/webp")
-					img(src='./img/promo.webp', srcset='./img/promo@2x.webp 2x' width='551' height='707' loading='lazy' alt='img' )
+				.book-label
+					img(src='./img/promo-label.webp', srcset='./img/promo-label@2x.webp 2x' width='99' height='99' loading='lazy' alt='img')
+				img(src='./img/promo.webp', srcset='./img/promo@2x.webp 2x' width='551' height='707' loading='lazy' alt='img' )
+
+section.promo
+	.container
+		.swiper.promo-swiper
+			.swiper-wrapper
+				+promoSlider
+				+promoSlider
+				+promoSlider
+				+promoSlider
+				+promoSlider
+			
+			.promo-pagination.num-pagination 

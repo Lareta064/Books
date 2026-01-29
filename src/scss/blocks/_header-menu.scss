@@ -29,6 +29,25 @@
 	color: var(--text);
 	transition: .3s;
 	display: inline-block;
+	position: relative;
+	&:before{
+		content:'';
+		position: absolute;
+		display: block;
+		left: 0;
+		bottom: 0;
+		width: 0;
+		background-color: transparent;
+		
+		border-radius: 5px;
+		height: 1px;
+		transition: .3s; 
+	}
+	&:hover{
+		color: var(--accent);
+		&:before{width: 100%;background-color: var(--accent);}
+	}
+	&:active{color:#f6a42a; &:before{width: 0;background-color: #f6a42a;}}
 	@media (max-width: 1279px) {
 	  font-size: remy(20);
 	}

@@ -22,7 +22,19 @@ document.addEventListener('DOMContentLoaded', function(){
             
           }else{
              openMobileMenu();
-			 console.log('555');
           }
       });
+      // PROMO-SLIDER
+      let promoSwiper = new Swiper('.promo-swiper', {
+        spaceBetween:32,
+        pagination: {
+          
+        el: ".promo-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<span class="${className}">${String(index + 1).padStart(2, '0')}</span>`;
+        },
+      },
+    
+      })
 })
