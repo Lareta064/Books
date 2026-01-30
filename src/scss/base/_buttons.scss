@@ -34,4 +34,11 @@
 	font-size: remy(24);
 	&:hover{background: #4747d7;}
 	&:active{ background: var(--accent2);}
+	@media (max-width: 1199px) {
+	   font-size: remy(20);
+	}
+	@media (max-width: 767px) {
+	   font-size: remy(16);
+	   height: remy(39);
+	}
 }

@@ -15,7 +15,16 @@
 .h3{
 	font-weight: 400;
 	font-size: remy(32);
-	
+	@media (max-width: 1364px) {
+	  font-size: remy(28);
+	}
+	@media (max-width: 1199px) {
+	  font-size: remy(24);
+	}
+	@media (max-width: 767px) {
+	font-size: remy(20);
+	}
+
 }
 .section-header{
 	display: flex;

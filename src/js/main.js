@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function(){
           let sigleSwiper =  new Swiper(sw, {
               slidesPerView: 1,
               spaceBetween:10,
+              speed:600,
                pagination: {
                   el: ".book-pagination",
                   clickable: true,
