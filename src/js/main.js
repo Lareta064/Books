@@ -27,6 +27,31 @@ document.addEventListener('DOMContentLoaded', function(){
       
       // PROMO-SLIDER
       let promoSwiper = new Swiper('.promo-swiper', {
+         slidesPerView: 1,
+        spaceBetween:32,
+        speed:1000,
+        loop: true,
+        autoplay:{
+             delay: 3500,
+             disableOnInteraction: false,
+           },
+        pagination: {
+          el: ".promo-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return `<span class="${className}">${String(index + 1).padStart(2, '0')}</span>`;
+          },
+        }    
+      });
+      let promoSwiper2 = new Swiper('.promo-swiper2', {
+           slidesPerView: 1,
+            loop: true,
+          //  effect: 'fade',
+           speed: 800,
+           autoplay:{
+             delay: 1500,
+             disableOnInteraction: false,
+           },
         spaceBetween:32,
         pagination: {
           el: ".promo-pagination",
@@ -34,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function(){
           renderBullet: function (index, className) {
             return `<span class="${className}">${String(index + 1).padStart(2, '0')}</span>`;
           },
-        }
-    
-      })
+        }    
+      });
+
       let reviewSwiper = new Swiper('.testimonials-swiper', {
         slidesPerView: 1,
         spaceBetween:16,

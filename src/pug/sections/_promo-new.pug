@@ -1,0 +1,34 @@
+//PROMO
+mixin promoSlider2(img)
+	.swiper-slide
+		.promo-picture
+			.book-label
+				img.img-contain(src='./img/promo-label.webp', srcset='./img/promo-label@2x.webp 2x' width='99' height='99' loading='lazy' alt='img')
+			img(src='./img/promo.webp', srcset='./img/promo@2x.webp 2x' width='551' height='707' loading='lazy' alt='img' )
+
+section.promo.py-40
+	.container
+		.promo-content
+			.promo-text
+				.promo-suptext A 5-Book STEM <br/> Collection
+				h1.h1 Science That Makes<br>More Sense Than Any<br>Textbook
+				.promo-subtext A visual STEM collection that replaces<br>confusing chapters with simple, clear answers
+				a.btn(href="#!" rel="noreferrer noopener" target="_blank") Buy on Amazon
+			
+			.swiper.promo-swiper2
+				.swiper-wrapper
+					.swiper-slide
+						.promo-picture
+							img(src='./img/promo.webp', srcset='./img/promo@2x.webp 2x' width='551' height='707' loading='lazy' alt='img' )
+					.swiper-slide
+						.promo-picture
+							img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNJL31Ke1NzNLCu2jXH5IjI9nroLJEoOatQ&s', srcset='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNJL31Ke1NzNLCu2jXH5IjI9nroLJEoOatQ&s' width='551' height='707' loading='lazy' alt='img' )
+					.swiper-slide
+						.promo-picture
+							img(src='https://igromaster.by/upload/iblock/56d/56dcfd43aa8f510141aae80880d0f0ae.jpg', srcset='https://igromaster.by/upload/iblock/56d/56dcfd43aa8f510141aae80880d0f0ae.jpg' width='551' height='707' loading='lazy' alt='img' )
+					.swiper-slide
+						.promo-picture
+							img(src='./img/promo.webp', srcset='./img/promo@2x.webp 2x' width='551' height='707' loading='lazy' alt='img' )
+					
+			
+			.promo-pagination.num-pagination 

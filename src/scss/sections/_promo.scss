@@ -13,7 +13,9 @@
 }
 .promo-content{
 	display: flex;
-	column-gap: remy(32);
+	justify-content: space-between;
+	width: 100%;
+	// column-gap: remy(32);
 	@media (max-width: 767px) {
 		flex-direction: column-reverse;
 		justify-content: center;
@@ -49,6 +51,7 @@
 	font-family: var(--font-family);
 	font-weight: 400;
 	padding-top: remy(8);
+	padding-right: 32px;
 	@media (max-width: 767px) {
 	  padding-top: 0;
 	  row-gap: remy(8);
@@ -118,6 +121,17 @@
 	}
 }
 
-      
+// NEW
+.promo-swiper2{
+	width: 42%;
+	.promo-picture{
+		width: 100%; background-color: var(--bodyBg);
+		img{
+			height: 700px;
+			width: 500px;
+			object-fit: contain;
+		}
+	}
+} 
       
    
