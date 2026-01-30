@@ -26,30 +26,30 @@ document.addEventListener('DOMContentLoaded', function(){
       });
       
       // PROMO-SLIDER
-      let promoSwiper = new Swiper('.promo-swiper', {
-         slidesPerView: 1,
-        spaceBetween:32,
-        speed:1000,
-        loop: true,
-        autoplay:{
-             delay: 3500,
-             disableOnInteraction: false,
-           },
-        pagination: {
-          el: ".promo-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return `<span class="${className}">${String(index + 1).padStart(2, '0')}</span>`;
-          },
-        }    
-      });
+      // let promoSwiper = new Swiper('.promo-swiper', {
+      //    slidesPerView: 1,
+      //   spaceBetween:32,
+      //   speed:1000,
+      //   loop: true,
+      //   autoplay:{
+      //        delay: 3500,
+      //        disableOnInteraction: false,
+      //      },
+      //   pagination: {
+      //     el: ".promo-pagination",
+      //     clickable: true,
+      //     renderBullet: function (index, className) {
+      //       return `<span class="${className}">${String(index + 1).padStart(2, '0')}</span>`;
+      //     },
+      //   }    
+      // });
       let promoSwiper2 = new Swiper('.promo-swiper2', {
            slidesPerView: 1,
             loop: true,
-          //  effect: 'fade',
-           speed: 800,
+          // effect: 'fade',
+           speed: 1000,
            autoplay:{
-             delay: 1500,
+             delay: 4500,
              disableOnInteraction: false,
            },
         spaceBetween:32,
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function(){
           },
         }    
       });
-
+      //- testimonials-swiper 
       let reviewSwiper = new Swiper('.testimonials-swiper', {
         slidesPerView: 1,
         spaceBetween:16,
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function(){
         },
     
       })
-      
+    //- book-swiper 
     let booksSliders = document.querySelectorAll('.book-swiper');
      if( booksSliders.length >0){
        booksSliders.forEach((sw)=>{
@@ -97,5 +97,20 @@ document.addEventListener('DOMContentLoaded', function(){
         });
       });
      }
-	
+	  let missionSwiper = new Swiper('.mission-swiper', {
+        slidesPerView: 1,
+        spaceBetween:32,
+        speed:1000,
+        effect: 'fade',
+        autoplay:{
+          delay: 4500,
+        },
+        pagination: {
+          el: ".mission-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return `<span class="${className}">${String(index + 1).padStart(2, '0')}</span>`;
+          },
+        }    
+      });
 })

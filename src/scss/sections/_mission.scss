@@ -1,21 +1,79 @@
+@use "base/_var" as *;
 .mission-card{
 	display: flex;
-	align-items: center;
+	width: 100%;
+	position: relative;
+	
 	&__title{
-		width: 494px;
+		width: 35%;
+		max-width: remy(495);
 		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		@media (max-width: 1199px) {
+		   width: 100%;
+		   max-width: remy(335);
+		}
+		
 	}
 	&__img{
-		flex:1;
+		// flex:1;
 		img{
-			height: 653px;
-			width: auto;
+			height: 100%;
+			aspect-ratio: 1025/645;
+			transform: rotate(8deg);
+			max-height: remy(645);
+			
 
 		}
 	}
+	@media (max-width: 1199px) {
+	    flex-direction: column;
+		text-align: center;
+		
+		align-items: center;
+	}
 }
-.fs-24{
-	font-weight: 400;
-	font-size: 24px;
-	color: rgba(255, 255, 255, .7);
+.mission{
+	overflow: hidden;
+	@media (max-width: 1199px) {
+	  padding-top: 30px;
+	  padding-bottom: 30px;
+	}
+}
+.mission-content{
+	position: relative;
+	.fs-24{
+		position: absolute;
+		left: 0;
+		top: 27%;
+		z-index: 2;
+		@media (max-width: 1439px) {
+		 font-size: 1.3vw;
+		 top:20%;
+		}
+		@media (max-width: 1199px) {
+		  position: relative;
+		  inset: auto;
+		  text-align: center;
+		  font-size: remy(20);
+		  margin-bottom: remy(10);
+		}
+	}
+}
+.mission-swiper{
+	height: 100%;;
+	width: calc(50% + 50vw);
+	.swiper-slide{background-color: var(--bodyBg);}
+	@media (max-width: 1199px) {
+	   width: 100%;
+	}
+}
+.mission-pagination.num-pagination {
+	position: relative;
+	transform: translateY(-100px);
+	z-index: 5;
+	@media (max-width: 1199px) {
+	  transform: translateY(0);
+	}
 }

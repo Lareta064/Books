@@ -1,9 +1,9 @@
 @use "base/_var" as *;
-.promo-swiper{
-	padding-top: remy(20);
-}
+// .promo-swiper{
+// 	padding-top: remy(20);
+// }
 .promo-pagination.num-pagination {
-	margin-top: -10px;
+	margin-top: remy(70);
 	bottom: auto;
 	position: relative;
 	z-index: 4;
@@ -125,7 +125,7 @@
 .promo-swiper2{
 	width: 42%;
 	.promo-picture{
-		width: 100%; background-color: var(--bodyBg);
+		width: 100%;
 		img{
 			height: 700px;
 			width: 500px;

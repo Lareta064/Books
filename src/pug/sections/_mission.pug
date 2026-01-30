@@ -1,14 +1,39 @@
 //MISSION
-section.our-mission
+section.mission
 	.container
-		.section-header-group
+		.mission-content
 			h2.fs-24 The Mission
-		.swiper.mission-swiper
-			.swiper-wrapper
-				.swiper-slide
-					.mission-card
-						.mission-card-title
-							.h1 Clearer than any textbook
-						
-						.mission-card-image
-							img(src='./img/mission1.webp', srcset='./img/mission1@2x.webp 2x' width='1336' height='653' loading='lazy' alt='img')
+			.swiper.mission-swiper
+				.swiper-wrapper
+					.swiper-slide
+						.mission-card
+							.mission-card__title
+								.h1 Clearer than any textbook
+							
+							.mission-card__img
+								img(src='./img/mission1.webp', srcset='./img/mission1@2x.webp 2x' width='1025' height='645' loading='lazy' alt='img')
+					
+					.swiper-slide
+						.mission-card
+							.mission-card__title
+								.h1 Built for visual learners
+							
+							.mission-card__img
+								img(src='./img/mission2.webp', srcset='./img/mission2@2x.webp 2x' width='1025' height='645' loading='lazy' alt='img')
+
+					.swiper-slide
+						.mission-card
+							.mission-card__title
+								.h1 Perfect for Homeschooling
+							
+							.mission-card__img
+								img(src='./img/mission3.webp', srcset='./img/mission3@2x.webp 2x' width='1025' height='645' loading='lazy' alt='img')
+					.swiper-slide
+						.mission-card
+							.mission-card__title
+								.h1 Mastery without the struggle
+							
+							.mission-card__img
+								img(src='./img/mission4.webp', srcset='./img/mission4@2x.webp 2x' width='1025' height='645' loading='lazy' alt='img')
+				
+			.mission-pagination.num-pagination 

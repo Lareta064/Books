@@ -182,7 +182,7 @@ main{position: relative;
 }
 .swiper-button-prev{padding-right: 2px;}
 .swiper-button-next{padding-left: 2px;}
-.swiper .num-pagination{
+*.num-pagination{
 	display: flex;
 	column-gap:remy(25);
 	@media (max-width: 1023px) {
@@ -208,7 +208,7 @@ main{position: relative;
 	
 }
 
-.swiper .num-pagination .swiper-pagination-bullet {
+*.num-pagination .swiper-pagination-bullet {
       width: remy(83);
       font-size: remy(20);
       color: rgba(255,255,255, 1);
@@ -228,4 +228,4 @@ main{position: relative;
 	  }
     }
 
-.swiper .num-pagination   .swiper-pagination-bullet-active { opacity: 1; }
+*.num-pagination   .swiper-pagination-bullet-active { opacity: 1; }
