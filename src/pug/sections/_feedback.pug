@@ -1,0 +1,17 @@
+//FEEDBACK
+section.feedback.py-40
+	.feedback-image
+		img(src='./img/feedback.webp', srcset='./img/feedback@2x.webp 2x' width='601' height='546' loading='lazy' alt='img')
+	.container
+		h2.h1 Any questions?
+		.form-title Ask the author here
+		form.contact-form(action="#!" method="method")
+			
+			.form-item
+				input(type="text" name="name" placeholder="Your Name")
+			.form-item
+				input(type="text" name="email" placeholder="Email")
+			.form-textarea
+				textarea( name="message" placeholder="Message")
+			.form-button
+				input.btn-white(type="submit" value="Send")

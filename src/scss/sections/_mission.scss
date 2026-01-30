@@ -10,9 +10,11 @@
 		flex-shrink: 0;
 		display: flex;
 		align-items: center;
+		padding-bottom: remy(20);
 		@media (max-width: 1199px) {
 		   width: 100%;
 		   max-width: remy(335);
+		   padding-bottom: 0;
 		}
 		
 	}
@@ -71,7 +73,7 @@
 }
 .mission-pagination.num-pagination {
 	position: relative;
-	transform: translateY(-100px);
+	transform: translateY(-200px);
 	z-index: 5;
 	@media (max-width: 1199px) {
 	  transform: translateY(0);

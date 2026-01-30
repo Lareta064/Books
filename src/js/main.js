@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function(){
       //     },
       //   }    
       // });
-      let promoSwiper2 = new Swiper('.promo-swiper2', {
+      let promoSwiper2 = new Swiper('.promo-swiper', {
            slidesPerView: 1,
             loop: true,
           // effect: 'fade',

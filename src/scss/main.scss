@@ -1,6 +1,7 @@
 
 @use "base/_var" as *;
 @use "base/_base";
+@use "pages/_index-page";
 @use "base/_typography";
 @use "base/_buttons";
 @use "blocks/_logo";
@@ -12,5 +13,6 @@
 @use "sections/_books";
 @use "sections/_mission";
 @use "sections/_author";
+@use "sections/_feedback";
+@use "sections/_footer";
 
-@use "pages/_index-page";

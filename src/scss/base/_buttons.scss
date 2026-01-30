@@ -1,5 +1,5 @@
 @use "base/_var" as *;
-.btn, .btn-accent{
+.btn, .btn-accent, .btn-white{
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -41,4 +41,28 @@
 	   font-size: remy(16);
 	   height: remy(39);
 	}
+}
+.btn-white{
+  background-color: #fff;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 2.2em;
+  font-family: var(--font-family);
+	font-weight: 400;
+	font-size: remy(20);
+	color: #0c0c3b;
+	&:hover{
+		background: var(--accent);
+		color: white;
+	}
+	&:active{
+		 background-color: #fff;
+		 color: #0c0c3b;
+	}
+	@media (max-width: 767px) {
+	  width: 100%;
+	  max-width: remy(424);
+	  height: 2em;
+	}
+
 }

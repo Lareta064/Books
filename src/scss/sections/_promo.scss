@@ -1,14 +1,38 @@
 @use "base/_var" as *;
-// .promo-swiper{
-// 	padding-top: remy(20);
-// }
+.promo-swiper{
+	width: 42%;
+	.promo-picture{
+		width: 100%;
+		img{
+			aspect-ratio: 500/700;
+			object-fit: contain;
+		}
+		@media (max-width: 767px) {
+		width: 100%;
+		
+			max-width: remy(267);
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+		img{
+				max-width: remy(267);
+				aspect-ratio:267/342;
+				object-fit: contain;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+	width: 100%;
+	}
+} 
+  
 .promo-pagination.num-pagination {
 	margin-top: remy(70);
 	bottom: auto;
 	position: relative;
 	z-index: 4;
 	@media (max-width: 1199px) {
-	margin-top: 0;
+	  margin-top: remy(12);
 	}
 }
 .promo-content{
@@ -108,30 +132,11 @@
 
 	}
 	@media (max-width: 767px) {
-	    width: 100%;
-		max-width: remy(267);
-		margin: 0 auto;
-		display: flex;
-		justify-content: center;
-		img{
-			max-width: remy(267);
-			aspect-ratio: remy(342);
-			object-fit: contain;
-		}
+	    
+		
 	}
 }
 
 // NEW
-.promo-swiper2{
-	width: 42%;
-	.promo-picture{
-		width: 100%;
-		img{
-			height: 700px;
-			width: 500px;
-			object-fit: contain;
-		}
-	}
-} 
-      
+    
    

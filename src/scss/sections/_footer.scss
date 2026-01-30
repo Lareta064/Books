@@ -1,0 +1,7 @@
+@use "../base/var" as *;
+footer.footer{
+padding-block: remy(30);
+text-align: center;
+font-size: remy(16);
+border-top: 1px solid rgba(255,255,255, .2)
+}
