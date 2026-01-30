@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function(){
       let promoSwiper = new Swiper('.promo-swiper', {
         spaceBetween:32,
         pagination: {
-          
           el: ".promo-pagination",
           clickable: true,
           renderBullet: function (index, className) {
@@ -58,4 +57,19 @@ document.addEventListener('DOMContentLoaded', function(){
         },
     
       })
+      
+    let booksSliders = document.querySelectorAll('.book-swiper');
+     if( booksSliders.length >0){
+       booksSliders.forEach((sw)=>{
+          let sigleSwiper =  new Swiper(sw, {
+              slidesPerView: 1,
+              spaceBetween:10,
+               pagination: {
+                  el: ".book-pagination",
+                  clickable: true,
+                }
+        });
+      });
+     }
+	
 })

@@ -33,7 +33,7 @@ section.inner-promo(
 	--text: #fff;
 	--reverceText: #000;
 	--bodyBg: #0b0b39;
-	--accent2: #0b0b39;
+	--accent2: #151580;
 	
 }
 html {
@@ -137,6 +137,17 @@ main{position: relative;
 	}
 	@media (max-width: 767px) {
 	  padding-inline: 16px;
+	}
+}
+.py-40{
+	padding-top: remy(40);
+	padding-bottom: remy(40);
+	.container{
+		@media (max-width: 767px) {position: relative;}
+	}
+	@media (max-width: 767px) {
+		padding-top: remy(30);
+		padding-bottom: remy(30);
 	}
 }
 /*SWIPER*/

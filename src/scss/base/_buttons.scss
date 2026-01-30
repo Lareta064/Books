@@ -1,5 +1,5 @@
 @use "base/_var" as *;
-.btn{
+.btn, .btn-accent{
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -26,4 +26,12 @@
 }
 .btn:active{
 	background: #f6a42a;
+}
+.btn-accent{
+	height: remy(55);
+	background: var(--accent2);
+	width: 100%;
+	font-size: remy(24);
+	&:hover{background: #4747d7;}
+	&:active{ background: var(--accent2);}
 }
