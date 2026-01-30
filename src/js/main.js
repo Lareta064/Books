@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
         mobileMenu.style.height =  menuHeight + 'px';
         bodyEl.classList.add('lock');
       }
-        menuButton.addEventListener('click', ()=> {
+      menuButton.addEventListener('click', ()=> {
       
           if( menuButton.classList.contains('active')){
              closeMobileMenu();
@@ -24,17 +24,35 @@ document.addEventListener('DOMContentLoaded', function(){
              openMobileMenu();
           }
       });
+      
       // PROMO-SLIDER
       let promoSwiper = new Swiper('.promo-swiper', {
         spaceBetween:32,
         pagination: {
           
-        el: ".promo-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return `<span class="${className}">${String(index + 1).padStart(2, '0')}</span>`;
+          el: ".promo-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return `<span class="${className}">${String(index + 1).padStart(2, '0')}</span>`;
+          },
+        }
+    
+      })
+      let reviewSwiper = new Swiper('.testimonials-swiper', {
+        slidesPerView:'auto',
+        spaceBetween:16,
+        navigation: {
+          nextEl: ".testimonial-next",
+          prevEl: ".testimonial-prev",
         },
-      },
+        speed:800,
+        breakpoints: {
+          
+          1365: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
     
       })
 })

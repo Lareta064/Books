@@ -12,3 +12,9 @@
 	font-size: remy(32);
 	}
 }
+.section-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom:remy(40);
+}

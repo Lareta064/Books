@@ -1,6 +1,36 @@
 //REVIEW
+mixin reviewCard(title)
+	.swiper-slide
+		.testimonial-card
+			.testimonial-card__header
+				span.icon-persone
+				span.testimonial-title !{title}
+			.testimonial-card__rating
+				span.rating-stars
+			.testimonial-card__body
+				block
+
 section.testimonials
 	.container
+		.section-header
+			h2.h1 Reviews
+			.swiper-special-navigation
+				button.swiper-button-prev.testimonial-prev
+				button.swiper-button-next.testimonial-next
+		
 		.testimonials-swiper.swiper
 			.swiper-wrapper
-				.swiper-slide
+				+reviewCard('Natalie')
+					p This book is amazing for kids! It explains the human body in very simple words that children can understand. The pictures and diagrams are clear and fun to look at. My child learned so much and keeps asking questions about how the body works. It makes science exciting and easy to remember. Perfect for ages 8–12 and great for school learning or at home. The facts are interesting, and my kid enjoys reading it every day. I highly recommend it for any young learner!
+				
+				+reviewCard('VIC')
+					p We loved the book. It explains physics in a very easy and fun way. My kids are 9 and 7, and they really enjoyed reading it. The pictures and examples got them talking and asking questions, which was great to see. And the best part is that they were able to read it on their own without needing much help from me. It made learning feel effortless and fun.
+				+reviewCard('Supreme')
+					p I appreciate how Technology Made Easy for Kids turns intimidating subjects into clear, engaging lessons my child genuinely enjoys. The book explains how the Internet, AI, coding, energy, and space technology work in a way that feels approachable without being simplistic. The Scratch coding section builds confidence, while the AI and robotics chapters spark meaningful curiosity about the future. Bright illustrations and real-world examples keep learning active and relevant.
+				+reviewCard('Consuelo Wappel')
+					p This book has drawings and pictures that are bright, detailed, and full of personality. They are perfect for sparking curiosity in young readers. Each page feels alive with color and motion, making space science fun and easy to understand. A must have for classrooms and home schooling, especially for kids who love to learn through visuals.
+				+reviewCard('Natalie')
+					p This book is amazing for kids! It explains the human body in very simple words that children can understand. The pictures and diagrams are clear and fun to look at. My child learned so much and keeps asking questions about how the body works. It makes science exciting and easy to remember. Perfect for ages 8–12 and great for school learning or at home. The facts are interesting, and my kid enjoys reading it every day. I highly recommend it for any young learner!
+				
+				+reviewCard('VIC')
+					p We loved the book. It explains physics in a very easy and fun way. My kids are 9 and 7, and they really enjoyed reading it. The pictures and examples got them talking and asking questions, which was great to see. And the best part is that they were able to read it on their own without needing much help from me. It made learning feel effortless and fun.

@@ -3,7 +3,7 @@
 	padding-top: remy(20);
 }
 .promo-pagination.num-pagination {
-	margin-top: -40px;
+	margin-top: -10px;
 	bottom: auto;
 	position: relative;
 	z-index: 4;
@@ -24,6 +24,7 @@
 }
 .promo{
 	position: relative;
+	padding-bottom: 60px;
 	&:after{
 		content:'';
 		
@@ -116,36 +117,7 @@
 		}
 	}
 }
-.swiper .num-pagination{
-	display: flex;
-	column-gap:remy(25);
-	@media (max-width: 1023px) {
-	column-gap:remy(15);
-	justify-content: center;
-	margin-top: remy(24);
-	}
-}
-.swiper .num-pagination .swiper-pagination-bullet {
-      width: remy(83);
-      font-size: remy(20);
-      color: rgba(255,255,255, 1);
-      opacity: .5;
-      border-bottom: 1px solid currentColor;
-	  margin: 0;
-	  border-radius: 0;
-	  height: auto;
-	  background: transparent;
-	  transition: .3s;
-	  line-height: 1.2;
-	  padding-bottom: 9px;
-	  @media (max-width: 1023px) {
-	  width: remy(56);
-	  font-size: remy(14);
-	  text-align: center;
-	  }
-    }
 
-.swiper .num-pagination   .swiper-pagination-bullet-active {
-       opacity: 1;
       
-    }
+      
+   
