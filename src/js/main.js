@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
       })
       let reviewSwiper = new Swiper('.testimonials-swiper', {
-        slidesPerView:'auto',
+        slidesPerView: 1,
         spaceBetween:16,
         navigation: {
           nextEl: ".testimonial-next",
@@ -47,7 +47,10 @@ document.addEventListener('DOMContentLoaded', function(){
         },
         speed:800,
         breakpoints: {
-          
+          574:{
+            slidesPerView: 'auto',
+             spaceBetween:16,
+          },
           1365: {
             slidesPerView: 4,
             spaceBetween: 30,

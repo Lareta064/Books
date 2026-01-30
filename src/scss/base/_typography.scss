@@ -17,4 +17,9 @@
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom:remy(40);
+	@media (max-width: 767px) {
+	   margin-bottom:remy(20);
+	   justify-content: center;
+	   text-align: center;
+	}
 }

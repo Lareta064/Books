@@ -61,10 +61,11 @@
 	padding-top: remy(40);
 	padding-bottom: remy(40);
 	.container{
-		@media (max-width: 767px) {
-		position: relative;
-		
-		}
+		@media (max-width: 767px) {position: relative;}
+	}
+	@media (max-width: 767px) {
+		padding-top: remy(30);
+		padding-bottom: remy(30);
 	}
 }
 .testimonials-swiper .swiper-slide{
@@ -73,5 +74,8 @@
 	}
 	@media (max-width: 1023px) {
 	 width: remy(333)!important;
+	}
+	@media (max-width: 574px) {
+	 width: 100%!important;
 	}
 }

@@ -186,13 +186,15 @@ main{position: relative;
 	column-gap:remy(20);
 	.swiper-button-next,
 	.swiper-button-prev{
-		position: relative;
-		 margin: 0;
-	    inset: auto;
+		transform: translateY(100%);
+		@media (min-width: 768px) {
+	  		position: relative;
+			margin: 0;
+			inset: auto;
+			transform: translateY(0);
+		}
 	}
-	@media (max-width: 767px) {
-	   position: absolute;
-	}
+	
 }
 
 .swiper .num-pagination .swiper-pagination-bullet {
