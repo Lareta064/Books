@@ -1,7 +1,9 @@
 @use "base/_var" as *;
 .about-author{
 	overflow: hidden;
+
 	.h1{margin-bottom: remy(30);}
+	
 }
 .about-author-content{
 	position: relative;

@@ -1,7 +1,7 @@
 @use "base/_var" as *;
 .feedback {
 	position: relative;
-	
+	padding-bottom: 50px;
 	.feedback-image{
 		position: absolute;
 		right: 0;
@@ -79,7 +79,7 @@
 	  width: 100%;
 	  row-gap:remy(16);
 	  .form-item{width: 100%;}
-	  .form-button{margin-top: 0}
+	  
 	  .btn-white{width: 100%;}
 	}
 }
