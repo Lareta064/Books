@@ -50,7 +50,7 @@
 		left: 0;
 		top: 27%;
 		z-index: 2;
-		@media (max-width: 1439px) {
+		@media (max-width: 1599px) {
 		 font-size: 1.3vw;
 		 top:20%;
 		}
@@ -73,7 +73,7 @@
 }
 .mission-pagination.num-pagination {
 	position: relative;
-	transform: translateY(-200px);
+	transform: translateY(-100px);
 	z-index: 5;
 	@media (max-width: 1199px) {
 	  transform: translateY(0);
