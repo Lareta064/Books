@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(){
 	 /*MENU MOBILE */
     const  bodyEl = document.body;
-	 const menuButton = document.querySelector('#menu-toggle');
+	  const menuButton = document.querySelector('#menu-toggle');
     const mobileMenu = document.querySelector('#header-menu');
-    
-      function closeMobileMenu(){
+     function closeMobileMenu(){
         menuButton.classList.remove('active');
         mobileMenu.style.height = 0;
         bodyEl.classList.remove('lock');
@@ -15,34 +14,19 @@ document.addEventListener('DOMContentLoaded', function(){
         mobileMenu.style.height =  menuHeight + 'px';
         bodyEl.classList.add('lock');
       }
-      menuButton.addEventListener('click', ()=> {
-      
-          if( menuButton.classList.contains('active')){
-             closeMobileMenu();
-            
-          }else{
-             openMobileMenu();
-          }
-      });
-      
-      // PROMO-SLIDER
-      // let promoSwiper = new Swiper('.promo-swiper', {
-      //    slidesPerView: 1,
-      //   spaceBetween:32,
-      //   speed:1000,
-      //   loop: true,
-      //   autoplay:{
-      //        delay: 3500,
-      //        disableOnInteraction: false,
-      //      },
-      //   pagination: {
-      //     el: ".promo-pagination",
-      //     clickable: true,
-      //     renderBullet: function (index, className) {
-      //       return `<span class="${className}">${String(index + 1).padStart(2, '0')}</span>`;
-      //     },
-      //   }    
-      // });
+      if(mobileMenu){
+          const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+          menuButton.addEventListener('click', ()=> {      
+           if( menuButton.classList.contains('active')){ closeMobileMenu();}
+           else{ openMobileMenu(); }
+        });
+        mobileMenuLinks.forEach((item)=>{
+          item.addEventListener('click', ()=> {      
+            closeMobileMenu();
+          });
+        });
+      }
       let promoSwiper2 = new Swiper('.promo-swiper', {
            slidesPerView: 1,
             loop: true,
